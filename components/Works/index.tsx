@@ -66,7 +66,7 @@ const Works = () => (
             rel="noreferrer"
           >
             Tweet generator
-          </a>
+          </a>{" "}
           <small>(2019-2021)</small>
         </h3>
         <p>マルコフ連鎖によるツイート自動生成サービス</p>
