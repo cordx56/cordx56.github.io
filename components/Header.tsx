@@ -1,9 +1,7 @@
-import Image from "next/image";
-
 const Header = () => (
   <header className="sticky p-4 cards-container">
     <div className="flex flex-col sm:flex-row justify-center items-center mx-auto h-full">
-      <Image
+      <img
         className="rounded-full mr-4"
         src="https://github.com/cordx56.png"
         width={100}
