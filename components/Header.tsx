@@ -8,6 +8,7 @@ const Header = () => (
         src="https://github.com/cordx56.png"
         width={100}
         height={100}
+        alt="cordx56 icon"
       />
       <div className="pt-2 px-4">
         <h1 className="text-5xl">@cordx56</h1>
