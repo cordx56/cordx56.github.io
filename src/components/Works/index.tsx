@@ -14,7 +14,7 @@ const Works = () => (
           </a>{" "}
           <small>(2019-2021)</small>
         </h3>
-        <p>Simple Interpreter Language interpreter</p>
+        <p>Simple Interpreter Language interpreter written in Rust</p>
       </li>
       <li>
         <h3 className="h3">
@@ -27,7 +27,7 @@ const Works = () => (
           </a>{" "}
           <small>(2021)</small>
         </h3>
-        <p>Small LIsP compiler</p>
+        <p>Small LIsP compiler written in Rust</p>
       </li>
       <li>
         <h3 className="h3">

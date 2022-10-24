@@ -7,7 +7,7 @@ const Header = () => {
   const [blur, setBlur] = useState(0);
   const onScrollOrResize = () => {
     updateHeader();
-  }
+  };
   const updateHeader = (reset = false) => {
     const maxBlur = 8;
     if (window && headerRef.current && headerContentsRef.current) {
@@ -19,11 +19,15 @@ const Header = () => {
         setHeaderContentsWrapperTop(0);
         window.scrollTo(0, initScrollY);
       } else if (scrollY < initScrollY) {
-        setHeaderContentsWrapperTop((headerHeight - scrollY - headerContentsHeight) / 2);
+        setHeaderContentsWrapperTop(
+          (headerHeight - scrollY - headerContentsHeight) / 2
+        );
         setBlur(0);
       } else {
         setHeaderContentsWrapperTop(0);
-        setBlur(Math.min(1, (scrollY - initScrollY) / headerContentsHeight) * maxBlur);
+        setBlur(
+          Math.min(1, (scrollY - initScrollY) / headerContentsHeight) * maxBlur
+        );
       }
     }
   };
@@ -46,8 +50,14 @@ const Header = () => {
       ref={headerRef}
       style={{ filter: `blur(${blur}px)` }}
     >
-      <div className="absolute w-full" style={{ top: headerContentsWrapperTop }}>
-        <div className="flex flex-col sm:flex-row justify-center items-center p-4" ref={headerContentsRef}>
+      <div
+        className="absolute w-full"
+        style={{ top: headerContentsWrapperTop }}
+      >
+        <div
+          className="flex flex-col sm:flex-row justify-center items-center p-4"
+          ref={headerContentsRef}
+        >
           <img
             className="rounded-full"
             src="https://github.com/cordx56.png"
