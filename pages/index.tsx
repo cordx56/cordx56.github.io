@@ -11,7 +11,7 @@ const Home = () => (
       <title>cordx.cx</title>
     </Head>
     <Header />
-    <main className="cards-container flex flex-wrap">
+    <main className="cards-container flex flex-wrap relative z-10">
       <div className="w-full lg:w-1/2 p-2">
         <Profile />
       </div>
