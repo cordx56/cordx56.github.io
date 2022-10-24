@@ -1,6 +1,16 @@
 const Links = () => (
   <section className="card">
     <h1 className="h1">Links</h1>
+    <h2 className="h2">Blog</h2>
+    <p>
+      <a
+        href="https://cordx56.hatenablog.com/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        かおるノート
+      </a>
+    </p>
     <h2 className="h2">Wishlists</h2>
     <ul className="ul">
       <li>
