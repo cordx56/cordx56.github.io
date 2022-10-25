@@ -32,6 +32,19 @@ const Links = () => (
         </a>
       </li>
     </ul>
+    <h2 className="h2">Others</h2>
+    <ul className="ul">
+      <li>
+        <a href="https://otsu.care/" target="_blank" rel="noreferrer">
+          お疲れ様です
+        </a>
+      </li>
+      <li>
+        <a href="https://moudame.com/" target="_blank" rel="noreferrer">
+          もうだめ
+        </a>
+      </li>
+    </ul>
   </section>
 );
 
