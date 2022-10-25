@@ -44,6 +44,11 @@ const Header = () => {
       }
     };
   }, []);
+
+  const [qrcode, setQrcode] = useState(false);
+  const qrcodeSwitch = () => {
+    setQrcode(!qrcode);
+  };
   return (
     <header
       className="sticky top-0 cards-container z-0 h-screen"
@@ -58,12 +63,22 @@ const Header = () => {
           className="flex flex-col sm:flex-row justify-center items-center p-4"
           ref={headerContentsRef}
         >
-          <img
-            className="rounded-full"
-            src="https://github.com/cordx56.png"
-            alt="cordx56 icon"
-            style={{ width: 100, height: 100 }}
-          />
+          {qrcode ? (
+            <img
+              src="/qr-cordx-cx.svg"
+              alt="cordx.cx QR code"
+              style={{ width: 100, height: 100 }}
+              onClick={qrcodeSwitch}
+            />
+          ) : (
+            <img
+              className="rounded-full"
+              src="https://github.com/cordx56.png"
+              alt="cordx56 icon"
+              style={{ width: 100, height: 100 }}
+              onClick={qrcodeSwitch}
+            />
+          )}
           <div className="py-2 px-4">
             <h1 className="text-5xl">@cordx56</h1>
             <ul className="flex justify-around">
