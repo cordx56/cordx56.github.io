@@ -40,7 +40,7 @@ const Works = () => (
           </a>{" "}
           <small>(2022)</small>
         </h3>
-        <p>Parser combinator written in Golang</p>
+        <p>Parser combinators written in Golang</p>
       </li>
       <li>
         <h3 className="h3">
@@ -53,7 +53,7 @@ const Works = () => (
           </a>{" "}
           <small>(2022)</small>
         </h3>
-        <p>Parser combinator written in TypeScript</p>
+        <p>Parser combinators written in TypeScript</p>
       </li>
     </ul>
     <h2 className="h2">Web</h2>
@@ -70,6 +70,15 @@ const Works = () => (
           <small>(2019-2021)</small>
         </h3>
         <p>マルコフ連鎖によるツイート自動生成サービス</p>
+      </li>
+      <li>
+        <h3 className="h3">
+          <a href="https://digico.cordx.net/" target="_blank" rel="noreferrer">
+            digiCo NLP
+          </a>{" "}
+          <small>(2018-2019)</small>
+        </h3>
+        <p>自然言語質問応答システム</p>
       </li>
     </ul>
   </section>
