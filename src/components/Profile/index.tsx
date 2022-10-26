@@ -110,6 +110,10 @@ const certificate: TimeLineRow[] = [
 const Profile = () => (
   <section className="card">
     <h1 className="h1">Profile</h1>
+    <p className="p">Bachelor of Engineering</p>
+    <p className="p">
+      Programming Language, Natural Language Processing and Web Service
+    </p>
     <h2 className="h2">Affiliation</h2>
     <TimeLineTable timeLineRows={affiliation} />
     <h2 className="h2">Experience</h2>
