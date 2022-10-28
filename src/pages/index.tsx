@@ -4,6 +4,7 @@ import Profile from "../components/Profile";
 import Works from "../components/Works";
 import Footer from "../components/Footer";
 import Links from "../components/Links";
+import Terminal from "../components/Terminal";
 
 const Home = () => (
   <div className="main-contents">
@@ -20,6 +21,11 @@ const Home = () => (
       </div>
       <div className="w-full lg:w-1/2 p-2">
         <Links />
+      </div>
+      <div className="w-full lg:w-1/2 p-2">
+        <section className="card">
+          <Terminal />
+        </section>
       </div>
     </main>
     <Footer />
