@@ -3,16 +3,28 @@ import TerminalArea from "./TerminalArea";
 import { useShell } from "./shell";
 
 const Terminal = () => {
-  const { text: shellText, cursorPosition, eventHandler } = useShell();
+  const {
+    text: shellText,
+    cursorPosition,
+    onKeydownHandler,
+    onCompositionStartHandler,
+    onCompositionUpdateHandler,
+    onCompositionEndHandler,
+  } = useShell();
   const onInput = (e: KeyboardEvent<HTMLTextAreaElement>) => {
-    eventHandler(e);
+    onInputHandler(e);
   };
+  const onKeydown = (e: KeyboardEvent<HTMLTextAreaElement>) => {};
   return (
     <TerminalArea
       text={shellText}
-      className="w-full h-32"
+      className="w-full h-64"
       style={{}}
-      onInput={onInput}
+      cursorPosition={cursorPosition}
+      onKeydown={onKeydownHandler}
+      onCompositionStart={onCompositionStartHandler}
+      onCompositionUpdate={onCompositionUpdateHandler}
+      onCompositionEnd={onCompositionEndHandler}
     />
   );
 };

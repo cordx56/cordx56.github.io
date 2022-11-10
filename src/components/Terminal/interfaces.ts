@@ -1,4 +1,8 @@
-import { CSSProperties, KeyboardEventHandler } from "react";
+import {
+  CompositionEventHandler,
+  CSSProperties,
+  KeyboardEventHandler,
+} from "react";
 
 export type StyledChar = {
   char: string;
@@ -9,5 +13,8 @@ export type StyledChar = {
 export type ShellOutput = {
   text: StyledChar[];
   cursorPosition: number;
-  eventHandler: KeyboardEventHandler<HTMLTextAreaElement>;
+  onKeydownHandler: KeyboardEventHandler<HTMLTextAreaElement>;
+  onCompositionStartHandler: CompositionEventHandler;
+  onCompositionUpdateHandler: CompositionEventHandler;
+  onCompositionEndHandler: CompositionEventHandler;
 };
