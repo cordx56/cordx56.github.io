@@ -10,7 +10,12 @@ const Home = () => (
     <Head>
       <title>cordx.cx</title>
       <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png" />
-      <link rel="icon" type="image/png" sizes="192x192" href="/favicon-large.png" />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="192x192"
+        href="/favicon-large.png"
+      />
       <link rel="apple-touch-icon" href="/favicon-large.png" />
     </Head>
     <Header />
