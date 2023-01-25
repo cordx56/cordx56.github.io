@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/cordx56
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://cordx.cx
+  * I am cordx56 (https://keybase.io/cordx56) on keybase.
+  * I have a public key with fingerprint 5B0B 90ED B3FB CD9C C48C  E8D3 D227 C7CF 8AC5 C8F7
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204cad5855852b1afdd946b153859cecaec9049bdf2d2fdb156bf90f6c000d89c90a",
+      "fingerprint": "5b0b90edb3fbcd9cc48ce8d3d227c7cf8ac5c8f7",
+      "host": "keybase.io",
+      "key_id": "d227c7cf8ac5c8f7",
+      "kid": "0101d1749f536969ecd5e3f8c35115ea35bd36ea8a68c828709644852008a376b58d0a",
+      "uid": "32c86942d2e48fb3e20f5f1e02fee119",
+      "username": "cordx56"
+    },
+    "service": {
+      "hostname": "cordx.cx",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1674684959,
+  "expire_in": 157680000,
+  "prev": "e0840fe08503e908d78ff794484daec21b1af780d0fc30b44d9151eff3103bce",
+  "seqno": 59,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMNsAnicbVJ/UFRVFN4NYWQbARO0SbF8UwG6w9z3c+9bBZZIckzQjEzTWt+79z58
+/Nil3QWWCA0RmQiLxgKCdJgm0cxmVRxAMn6JRgFSikGQziRDimjOAA6JOvUekzP9
+0cyde+ee833fPd89p3Oen8FkvBjxfV/pua5pY3f7/mwD+vno0/mU7MR5lDWfSiez
+B8nAxO2xp6uYslKAZgCHJMxDXluMTEsKxiInyDTPQl5EBEkEiYATZawwmFGwlhBk
+RQSKgAAAGIpaVqLMlKI6Uokry6U6PJosLwNZBATLrCIjLCLEQUQgZjHDWJAFKVBC
+PIKKRSPucLp1hlacLLlJtOrUYtrFPlve/+Af1Q1oTFs4UeFZQRREgjBPWAUilqdp
+nkgsL2NWIBKUBIggAy1AFDhOcwgAlFiLIPMQz9adPSvHMggKIqc5JBxUZJYwQOEV
+mgBGIYSmRR3oJi6HlEk0NHK6sJcXqAIzpQVzVET0f9WN/BcQjbwaLcvl9DiRM0OL
+7vB4stxWneXJy9JhuUS2/ytgl1UH1r5QY+QQl1t1OigrrSGRR9UVacHCCZATedFM
+EW+W6iJ2VUfwFgFqbQD6OyRHkyQAckDRdh6wRAQQW6CiWETNOoe1TjK03mELBBgo
+iAUyx2GR5mmiKCwNWFkzolt62+GkrPpTHilV03SrqQ7Jk+0iVEFH+7Y5BqPJEOD/
+mD5bBlNgyKOJu7goxLD7lcw3qsabu3xWf1utJSnC2WX8LP6j8sOm9KDzq7/ya32y
+dP3i0KFlnSFL5o8FtTbfWOj3+hN743Z7J7w131QZQ1fMoNOX0AA1HZz1smIaWFtg
+Trj+dcOec2WXaiInx9Q7bXyU6Wx4pK3ovdrfDhwnH9YtXw0PDX8cH9lGKQlp5uhq
+vM8ddX7d4ZakY2O9VNxZ27CncUptLwhOsfWtvF2d4V/Ssvmub7mrovLHV1siW1dV
+nNpyZcG1/s4xq7eoOP/Lyonitk++2LqJmRtQ+FzgT4v6atvrTrDJfd9F5PnuNrov
+NE0Phj+cnlmW8s7ljjWN14WpmJfGxwNvbfw1fyRg0LhlcdEuvwApHiobmtTP+0PP
+5O7Z7rhXGxI3CY6+uKrpyrG4y5sSQxIf3Dg9ak64w8HY6OhC9oPk+7U3M/3B/OEJ
+2/PHPy0YXlDvu+0rDut+68jg9vA1/UPc7z9Q9/6OGqpybNvYtct6PyY775dDiVcH
+6oTq3khnQl2pLzysp7zY7XjwrudM7NINJ2JuJS5Z9tQzc5Mn1420B64tbDyYciHC
+vDMozRf78K99ow2h71e8Vt9yMse3Pql5/NmlI/XzDnRQrUf6+gXfwYG0pM32nq0v
+3Jx689rMt39c3WlsKPlzIVVSMVodPgqG7Su7y8Ny5/Sixyv3l6xIjiijT8YE59t6
+ykq4UzXNZDox7B/MG8Lt
+=nTcf
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cordx56
+
+==================================================================
