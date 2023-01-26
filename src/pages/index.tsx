@@ -1,12 +1,12 @@
 import Head from "next/head";
-import Header from "../components/Header";
-import Profile from "../components/Profile";
-import Works from "../components/Works";
-import Footer from "../components/Footer";
-import Links from "../components/Links";
+import Header from "@/components/Header";
+import Profile from "@/components/Profile";
+import Works from "@/components/Works";
+import Footer from "@/components/Footer";
+import Links from "@/components/Links";
 
 const Home = () => (
-  <div className="main-contents">
+  <>
     <Head>
       <title>cordx.cx</title>
       <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png" />
@@ -31,7 +31,7 @@ const Home = () => (
       </div>
     </main>
     <Footer />
-  </div>
+  </>
 );
 
 export default Home;

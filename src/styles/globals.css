@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.body {
+  @apply bg-zinc-200 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-200;
+}
+
 .main-contents {
-  @apply min-h-screen bg-zinc-200 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-200;
+  @apply min-h-screen body;
 }
 .cards-container {
   @apply container m-auto;
