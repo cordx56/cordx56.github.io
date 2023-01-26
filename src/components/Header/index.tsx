@@ -80,9 +80,9 @@ const Header = () => {
             />
           )}
           <div className="py-2 px-4">
-            <h1 className="text-5xl">@cordx56</h1>
-            <ul className="flex justify-around">
-              <li className="mr-6">
+            <h1 className="text-5xl mx-6">@cordx56</h1>
+            <ul className="flex justify-between">
+              <li className="">
                 <h2 className="text-2xl">
                   <a
                     href="https://github.com/cordx56"
@@ -93,7 +93,7 @@ const Header = () => {
                   </a>
                 </h2>
               </li>
-              <li className="mr-6">
+              <li className="">
                 <h2 className="text-2xl">
                   <a
                     href="https://keybase.io/cordx56"
