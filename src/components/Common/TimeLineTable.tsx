@@ -10,7 +10,10 @@ const TimeLineTable = ({ timeLineRows }: { timeLineRows: TimeLineRow[] }) => (
   <table className="w-full">
     <tbody>
       {timeLineRows.map((tlr) => (
-        <tr className="border-b border-rose-500" key={tlr.node.toString()}>
+        <tr
+          className="border-b border-rose-500"
+          key={`${tlr.begin}:${tlr.end}`}
+        >
           <td className="p-2">
             {tlr.begin === tlr.end ? tlr.begin : `${tlr.begin} - ${tlr.end}`}
           </td>

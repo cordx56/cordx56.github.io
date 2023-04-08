@@ -18,3 +18,12 @@ export type ShellOutput = {
   onCompositionUpdateHandler: CompositionEventHandler;
   onCompositionEndHandler: CompositionEventHandler;
 };
+
+export type IoFunction = (cs: StyledChar[]) => void;
+export type CommandExecuteFunction = (
+  cwd: string,
+  setCwd: (cwwd: string) => void,
+  args: string[],
+  stdin: (s: string) => void,
+  stdout: IoFunction
+) => void;
