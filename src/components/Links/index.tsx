@@ -46,6 +46,11 @@ const Links = () => (
           もうだめ
         </a>
       </li>
+      <li>
+        <a href="https://dareka.help/" target="_blank" rel="noreferrer">
+          誰か助けて〜
+        </a>
+      </li>
     </ul>
   </section>
 );
