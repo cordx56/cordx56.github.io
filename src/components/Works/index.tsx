@@ -67,9 +67,9 @@ const Works = () => (
           >
             Tweet generator
           </a>{" "}
-          <small>(2019-2021)</small>
+          <small>(2019-2023)</small>
         </h3>
-        <p>マルコフ連鎖によるツイート自動生成サービス</p>
+        <p>マルコフ連鎖によるツイート自動生成サービス（サービス終了）</p>
       </li>
       <li>
         <h3 className="h3">
@@ -79,6 +79,15 @@ const Works = () => (
           <small>(2018-2019)</small>
         </h3>
         <p>自然言語質問応答システム</p>
+      </li>
+      <li>
+        <h3 className="h3">
+          <a href="https://isstarlink.com/" target="_blank" rel="noreferrer">
+            isstarlink.com
+          </a>{" "}
+          <small>(2023)</small>
+        </h3>
+        <p>Starlink ISP判別サービス</p>
       </li>
     </ul>
   </section>
