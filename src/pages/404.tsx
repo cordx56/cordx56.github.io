@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 
 const NotFound = () => (
-  <div className="main-contents flex justify-center items-center">
+  <div className="min-h-screen flex justify-center items-center">
     <Head>
       <title>404 Not found</title>
     </Head>
