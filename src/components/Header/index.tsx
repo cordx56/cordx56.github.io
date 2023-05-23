@@ -6,6 +6,7 @@ const Header = () => {
   const [headerContentsWrapperTop, setHeaderContentsWrapperTop] = useState(0);
   const [blur, setBlur] = useState(0);
   const [isDark, setIsDark] = useState(false);
+  const [showLogo, setShowLogo] = useState(false);
   const onScrollOrResize = () => {
     updateHeader();
   };
@@ -31,6 +32,9 @@ const Header = () => {
         );
       }
     }
+  };
+  const onNameClick = () => {
+    setShowLogo(!showLogo);
   };
   useEffect(() => {
     if (window) {
@@ -70,13 +74,6 @@ const Header = () => {
           className="flex flex-col sm:flex-row justify-center items-center p-4"
           ref={headerContentsRef}
         >
-          <div className="absolute w-full h-14 left-0 right-0 bottom-full">
-            {isDark ? (
-              <img src="/logo-white.svg" alt="logo" className="h-14 mx-auto" />
-            ) : (
-              <img src="/logo-black.svg" alt="logo" className="h-14 mx-auto" />
-            )}
-          </div>
           {qrcode ? (
             <img
               src="/qr-cordx-cx.svg"
@@ -93,8 +90,19 @@ const Header = () => {
               onClick={qrcodeSwitch}
             />
           )}
-          <div className="py-2 px-4">
-            <h1 className="text-5xl mx-6">@cordx56</h1>
+          <div className="w-72 py-2 px-4">
+            {showLogo ? (
+              <img
+                src={isDark ? "/logo-white.svg" : "/logo-black.svg"}
+                alt="logo"
+                className="h-12 mx-auto"
+                onClick={onNameClick}
+              />
+            ) : (
+              <h1 className="block text-5xl text-center" onClick={onNameClick}>
+                @cordx56
+              </h1>
+            )}
             <ul className="flex justify-between">
               <li className="">
                 <h2 className="text-2xl">
