@@ -19,7 +19,7 @@ const Home = () => (
       <link rel="apple-touch-icon" href="/favicon-large.png" />
     </Head>
     <Header />
-    <main className="cards-container flex flex-wrap relative z-10">
+    <main className="centered-container flex flex-wrap relative z-10">
       <div className="w-full lg:w-1/2 p-2">
         <Profile />
       </div>

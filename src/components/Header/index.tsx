@@ -62,7 +62,7 @@ const Header = () => {
   };
   return (
     <header
-      className="sticky top-0 cards-container z-0 h-screen"
+      className="sticky top-0 z-0 h-screen"
       ref={headerRef}
       style={{ filter: `blur(${blur}px)` }}
     >
