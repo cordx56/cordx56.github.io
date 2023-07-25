@@ -11,12 +11,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: denoland/setup-deno@v1
         with:
-          node-version: 16
-      - run: yarn install
-      - run: yarn build
-      - run: yarn export
+          deno-version: v1.x
+      - run: deno task build
+      # TODO: Upload ./out
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
