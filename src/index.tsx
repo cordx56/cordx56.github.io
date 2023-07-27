@@ -1,9 +1,11 @@
-const Home = () => {
-  return (<>
-    <main>
-      <h1>cordx.cx</h1>
-    </main>
-  </>);
-};
+export const title = "";
 
-export default Home;
+export default () => {
+  return (
+    <>
+      <main>
+        <h1>cordx.cx</h1>
+      </main>
+    </>
+  );
+};
