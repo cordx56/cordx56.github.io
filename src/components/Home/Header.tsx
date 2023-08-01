@@ -1,8 +1,10 @@
+"use client";
+
 import { useEffect, useRef, useState } from "react";
 
 const Header = () => {
-  const headerRef = useRef<HTMLDivElement>();
-  const headerContentsRef = useRef<HTMLDivElement>();
+  const headerRef = useRef<HTMLDivElement>(null);
+  const headerContentsRef = useRef<HTMLDivElement>(null);
   const [headerContentsWrapperTop, setHeaderContentsWrapperTop] = useState(0);
   const [blur, setBlur] = useState(0);
   const [isDark, setIsDark] = useState(false);
@@ -22,13 +24,13 @@ const Header = () => {
         window.scrollTo(0, initScrollY);
       } else if (scrollY < initScrollY) {
         setHeaderContentsWrapperTop(
-          (headerHeight - scrollY - headerContentsHeight) / 2
+          (headerHeight - scrollY - headerContentsHeight) / 2,
         );
         setBlur(0);
       } else {
         setHeaderContentsWrapperTop(0);
         setBlur(
-          Math.min(1, (scrollY - initScrollY) / headerContentsHeight) * maxBlur
+          Math.min(1, (scrollY - initScrollY) / headerContentsHeight) * maxBlur,
         );
       }
     }
@@ -74,22 +76,26 @@ const Header = () => {
           className="flex flex-col sm:flex-row justify-center items-center p-4"
           ref={headerContentsRef}
         >
-          {qrcode ? (
-            <img
-              src="/qr-cordx-cx.svg"
-              alt="cordx.cx QR code"
-              style={{ width: 100, height: 100 }}
-              onClick={qrcodeSwitch}
-            />
-          ) : (
-            <img
-              className="rounded-full"
-              src="https://github.com/cordx56.png"
-              alt="cordx56 icon"
-              style={{ width: 100, height: 100 }}
-              onClick={qrcodeSwitch}
-            />
-          )}
+          <div
+            className="slide-anim delay-1"
+            style={{ width: 100, height: 100 }}
+          >
+            {qrcode ? (
+              <img
+                className="w-full h-full"
+                src="/qr-cordx-cx.svg"
+                alt="cordx.cx QR code"
+                onClick={qrcodeSwitch}
+              />
+            ) : (
+              <img
+                className="rounded-full w-full h-full"
+                src="/icon.png"
+                alt="cordx56 icon"
+                onClick={qrcodeSwitch}
+              />
+            )}
+          </div>
           <div className="w-72 py-2 px-4">
             {showLogo ? (
               <img
@@ -99,7 +105,10 @@ const Header = () => {
                 onClick={onNameClick}
               />
             ) : (
-              <h1 className="block text-5xl text-center" onClick={onNameClick}>
+              <h1
+                className="block text-5xl text-center slide-anim delay-2"
+                onClick={onNameClick}
+              >
                 @cordx56
               </h1>
             )}

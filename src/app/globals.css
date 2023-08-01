@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-zinc-200 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-200;
+}
+
+.centered {
+  @apply container mx-auto;
+}
+
+.box {
+  @apply p-3 bg-zinc-100/70 dark:bg-zinc-800/70 border border-zinc-500 rounded-lg;
+}
+
+.row {
+  @apply flex flex-wrap;
+}
+.col-2 {
+  @apply w-full lg:w-1/2 p-2 mx-auto;
+}
+
+table {
+  @apply w-full;
+}
+tr {
+  @apply border-b border-rose-500;
+}
+td {
+  @apply p-2;
+}
+
+.ul {
+  @apply pl-6 my-2 list-disc;
+}
+
+.h1 {
+  @apply m-2 text-4xl;
+}
+.h2 {
+  @apply p-2 text-3xl border-b border-rose-700;
+}
+.h3 {
+  @apply text-2xl;
+}
+
+a {
+  @apply text-rose-500 hover:text-rose-700;
+}
+p {
+  @apply my-2;
+}
+
+.slide-anim {
+  position: relative;
+}
+.slide-anim::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(45deg, rgba(224, 0, 0, 0.95), rgba(242, 0, 180, 0.95));
+}
+.slide-anim.delay-1::after {
+  animation: change-width-d1 1s cubic-bezier(0.77, 0, 0.175, 1);
+}
+.slide-anim.delay-2::after {
+  animation: change-width-d2 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes change-width-d1 {
+  0% {
+    width: 100%;
+  }
+  45% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes change-width-d2 {
+  0% {
+    width: 100%;
+  }
+  75% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}

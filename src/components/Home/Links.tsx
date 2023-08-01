@@ -1,5 +1,5 @@
 const Links = () => (
-  <section className="card">
+  <section className="box">
     <h1 className="h1">Links</h1>
     <h2 className="h2">Blog</h2>
     <ul className="ul">
@@ -9,7 +9,7 @@ const Links = () => (
           target="_blank"
           rel="noreferrer"
         >
-          かおるノート
+          正論なんて諭んないで
         </a>
       </li>
     </ul>
@@ -47,8 +47,18 @@ const Links = () => (
         </a>
       </li>
       <li>
+        <a href="https://internetyame.ro/" target="_blank" rel="noreferrer">
+          インターネットやめろ
+        </a>
+      </li>
+      <li>
         <a href="https://dareka.help/" target="_blank" rel="noreferrer">
           誰か助けて〜
+        </a>
+      </li>
+      <li>
+        <a href="https://iterator.zip/" target="_blank" rel="noreferrer">
+          iterator.zip
         </a>
       </li>
     </ul>
