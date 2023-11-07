@@ -77,7 +77,7 @@ const Header = () => {
           ref={headerContentsRef}
         >
           <div
-            className="slide-anim delay-1"
+            className="delay-1"
             style={{ width: 100, height: 100 }}
           >
             {qrcode ? (
@@ -106,7 +106,7 @@ const Header = () => {
               />
             ) : (
               <h1
-                className="block text-5xl text-center slide-anim delay-2"
+                className="block text-5xl text-center delay-2"
                 onClick={onNameClick}
               >
                 @cordx56
