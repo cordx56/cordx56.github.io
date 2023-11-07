@@ -5,6 +5,15 @@ const Links = () => (
     <ul className="ul">
       <li>
         <a
+          href="https://blog.cordx.cx/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Bibliotheca ex Machina
+        </a>
+      </li>
+      <li>
+        <a
           href="https://cordx56.hatenablog.com/"
           target="_blank"
           rel="noreferrer"
