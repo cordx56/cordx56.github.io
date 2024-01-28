@@ -25,7 +25,7 @@ table {
   @apply w-full;
 }
 tr {
-  @apply border-b border-rose-500;
+  @apply border-b border-crimson-500;
 }
 td {
   @apply p-2;
@@ -39,14 +39,14 @@ td {
   @apply m-2 text-4xl;
 }
 .h2 {
-  @apply p-2 text-3xl border-b border-rose-700;
+  @apply p-2 text-3xl border-b border-crimson-700;
 }
 .h3 {
   @apply text-2xl;
 }
 
 a {
-  @apply text-rose-500 hover:text-rose-700;
+  @apply text-crimson-500 hover:text-crimson-700;
 }
 p {
   @apply my-2;
