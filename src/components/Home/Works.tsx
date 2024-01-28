@@ -32,6 +32,22 @@ const Works = () => (
       <li>
         <h3 className="h3">
           <a
+            href="https://crates.io/crates/polysite"
+            target="_blank"
+            rel="noreferrer"
+          >
+            polysite
+          </a>{" "}
+          <small>(2024)</small>
+        </h3>
+        <p>
+          Highly customizable, polymorphic static site generator library written
+          in Rust
+        </p>
+      </li>
+      <li>
+        <h3 className="h3">
+          <a
             href="https://github.com/cordx56/godrink"
             target="_blank"
             rel="noreferrer"
@@ -70,15 +86,6 @@ const Works = () => (
           <small>(2019-2023)</small>
         </h3>
         <p>マルコフ連鎖によるツイート自動生成サービス（サービス終了）</p>
-      </li>
-      <li>
-        <h3 className="h3">
-          <a href="https://digico.cordx.net/" target="_blank" rel="noreferrer">
-            digiCo NLP
-          </a>{" "}
-          <small>(2018-2019)</small>
-        </h3>
-        <p>自然言語質問応答システム</p>
       </li>
       <li>
         <h3 className="h3">

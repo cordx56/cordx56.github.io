@@ -76,10 +76,7 @@ const Header = () => {
           className="flex flex-col sm:flex-row justify-center items-center p-4"
           ref={headerContentsRef}
         >
-          <div
-            className="delay-1"
-            style={{ width: 100, height: 100 }}
-          >
+          <div className="delay-1" style={{ width: 100, height: 100 }}>
             {qrcode ? (
               <img
                 className="w-full h-full"

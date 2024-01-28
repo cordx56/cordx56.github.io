@@ -7,12 +7,15 @@ import Footer from "@/components/Home/Footer";
 
 export const metadata: Metadata = {
   title: "cordx.cx",
+  description: "cordx56's portfolio",
   icons: [
     { sizes: "64x64", url: "/favicon.png" },
     { sizes: "192x192", url: "/favicon-large.png" },
     { rel: "apple-touch-icon", url: "/favicon-large.png" },
   ],
-  openGraph: { images: [{ url: "https://cordx.cx/icon.png" }] },
+  metadataBase: new URL("https://cordx.cx"),
+  openGraph: { images: "https://cordx.cx/icon.png" },
+  twitter: { card: "summary" },
 };
 
 const Home = () => (

@@ -4,13 +4,10 @@ const Links = () => (
     <h2 className="h2">Blog</h2>
     <ul className="ul">
       <li>
-        <a
-          href="https://blog.cordx.cx/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Bibliotheca ex Machina
-        </a>
+        <a href="https://blog.cordx.cx/" target="_blank" rel="noreferrer">
+          Arc&lt;hive&gt;
+        </a>{" "}
+        (tech blog)
       </li>
       <li>
         <a
@@ -19,7 +16,8 @@ const Links = () => (
           rel="noreferrer"
         >
           正論なんて諭んないで
-        </a>
+        </a>{" "}
+        (others)
       </li>
     </ul>
     <h2 className="h2">Wishlists</h2>
