@@ -87,7 +87,7 @@ const Header = () => {
             ) : (
               <img
                 className="rounded-full w-full h-full"
-                src="/icon.png"
+                src="/favicon-large.png"
                 alt="cordx56 icon"
                 onClick={qrcodeSwitch}
               />
