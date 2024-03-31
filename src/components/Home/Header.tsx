@@ -39,22 +39,18 @@ const Header = () => {
     setShowLogo(!showLogo);
   };
   useEffect(() => {
-    if (window) {
-      window.addEventListener("scroll", onScrollOrResize);
-      window.addEventListener("resize", onScrollOrResize);
-      updateHeader(true);
+    window.addEventListener("scroll", onScrollOrResize);
+    window.addEventListener("resize", onScrollOrResize);
+    updateHeader(true);
 
-      const mq = window.matchMedia("(prefers-color-scheme: dark)");
-      setIsDark(mq.matches);
-      mq.onchange = (e) => {
-        setIsDark(e.matches);
-      };
-    }
+    const mq = window.matchMedia("(prefers-color-scheme: dark)");
+    setIsDark(mq.matches);
+    mq.onchange = (e) => {
+      setIsDark(e.matches);
+    };
     return () => {
-      if (window) {
-        window.removeEventListener("scroll", onScrollOrResize);
-        window.removeEventListener("resize", onScrollOrResize);
-      }
+      window.removeEventListener("scroll", onScrollOrResize);
+      window.removeEventListener("resize", onScrollOrResize);
     };
   }, []);
 
