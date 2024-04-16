@@ -1,9 +1,8 @@
 "use client";
 
-import { useRef, MouseEvent } from "react";
+import { MouseEvent } from "react";
 
 const Navbar = () => {
-  const navRef = useRef<HTMLDivElement>(null);
   const easing = (x: number) => {
     return 1 - Math.pow(1 - x, 3);
   };
@@ -12,10 +11,9 @@ const Navbar = () => {
     const iteration = milisec / interval;
     const start = window.scrollY;
     const target = document.getElementById(to)?.getBoundingClientRect().top;
-    const navHeight = navRef.current?.offsetHeight || 0;
     if (target) {
       const distance = Math.min(
-        target - navHeight,
+        target - 8,
         document.documentElement.offsetHeight - window.innerHeight - start,
       );
       const scroll = (distance: number, currentIter: number) => {
@@ -34,7 +32,7 @@ const Navbar = () => {
     scrollTo(url.hash.slice(1), 150);
   };
   return (
-    <nav className="nav" ref={navRef}>
+    <nav className="nav">
       <ul>
         <li className="inline-block">
           <a href="#profile" onClick={scrollClick}>
