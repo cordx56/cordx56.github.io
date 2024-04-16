@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Header from "@/components/Home/Header";
+import Navbar from "@/components/Home/Navbar";
 import Profile from "@/components/Home/Profile";
 import Works from "@/components/Home/Works";
 import Links from "@/components/Home/Links";
@@ -21,20 +22,11 @@ export const metadata: Metadata = {
 const Home = () => (
   <>
     <Header />
+    <Navbar />
     <main className="centered relative z-10">
-      <div className="row">
-        <div className="col-2">
-          <Profile />
-        </div>
-        <div className="col-2">
-          <Works />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-2">
-          <Links />
-        </div>
-      </div>
+      <Profile />
+      <Works />
+      <Links />
     </main>
     <Footer />
   </>

@@ -1,5 +1,5 @@
 const Links = () => (
-  <section className="box">
+  <section id="links" className="box">
     <h1 className="h1">Links</h1>
     <h2 className="h2">Blog</h2>
     <ul className="ul">

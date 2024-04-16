@@ -1,5 +1,5 @@
 const Works = () => (
-  <section className="box">
+  <section id="works" className="box">
     <h1 className="h1">Works</h1>
     <h2 className="h2">System, Library</h2>
     <ul className="ul">
