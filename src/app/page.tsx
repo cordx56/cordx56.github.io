@@ -22,13 +22,13 @@ export const metadata: Metadata = {
 const Home = () => (
   <>
     <Header />
-    <Navbar />
     <main className="centered relative z-10">
       <Profile />
       <Works />
       <Links />
     </main>
     <Footer />
+    <Navbar />
   </>
 );
 
