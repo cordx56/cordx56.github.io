@@ -40,13 +40,13 @@ const Navbar = () => {
           </a>
         </li>
         <li className="inline-block">
-          <a href="#works" onClick={scrollClick}>
-            Works
+          <a href="#links" onClick={scrollClick}>
+            Links
           </a>
         </li>
         <li className="inline-block">
-          <a href="#links" onClick={scrollClick}>
-            Links
+          <a href="#works" onClick={scrollClick}>
+            Works
           </a>
         </li>
       </ul>

@@ -24,8 +24,8 @@ const Home = () => (
     <Header />
     <main className="centered relative z-10">
       <Profile />
-      <Works />
       <Links />
+      <Works />
     </main>
     <Footer />
     <Navbar />

@@ -1,4 +1,5 @@
 import "./globals.css";
+import "@fortawesome/fontawesome-svg-core/styles";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

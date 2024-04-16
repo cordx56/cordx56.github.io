@@ -1,6 +1,19 @@
 const Links = () => (
   <section id="links" className="box">
     <h1 className="h1">Links</h1>
+    <h2 className="h2">Social</h2>
+    <ul className="ul">
+      <li>
+        <a href="https://github.com/cordx56" target="_blank" rel="noreferrer">
+          GitHub
+        </a>
+      </li>
+      <li>
+        <a href="https://keybase.io/cordx56" target="_blank" rel="noreferrer">
+          Keybase
+        </a>
+      </li>
+    </ul>
     <h2 className="h2">Blog</h2>
     <ul className="ul">
       <li>

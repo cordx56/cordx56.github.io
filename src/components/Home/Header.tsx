@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const Header = () => {
   const headerRef = useRef<HTMLDivElement>(null);
@@ -69,7 +71,7 @@ const Header = () => {
         style={{ top: headerContentsWrapperTop }}
       >
         <div
-          className="flex flex-col sm:flex-row justify-center items-center p-4"
+          className="flex flex-col sm:flex-row justify-center items-center px-4 pt-4 pb-2"
           ref={headerContentsRef}
         >
           <div className="delay-1" style={{ width: 100, height: 100 }}>
@@ -99,39 +101,16 @@ const Header = () => {
               />
             ) : (
               <h1
-                className="block text-5xl text-center delay-2"
+                className="block mb-2 text-5xl text-center delay-2"
                 onClick={onNameClick}
               >
                 @cordx56
               </h1>
             )}
-            <ul className="flex justify-between">
-              <li className="">
-                <h2 className="text-2xl">
-                  <a
-                    href="https://github.com/cordx56"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    GitHub
-                  </a>
-                </h2>
-              </li>
-              <li className="">
-                <h2 className="text-2xl">
-                  <a
-                    href="https://keybase.io/cordx56"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Keybase
-                  </a>
-                </h2>
-              </li>
-              <li className="">
-                <h2 className="text-2xl">
-                  <a href="mailto:cordx56@cordx.cx">email</a>
-                </h2>
+            <ul className="flex justify-center text-xl">
+              <li>
+                <FontAwesomeIcon icon={faEnvelope} className="mr-2" />
+                <a href="mailto:cordx56@cordx.cx">cordx56@cordx.cx</a>
               </li>
             </ul>
           </div>
