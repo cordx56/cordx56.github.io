@@ -9,14 +9,16 @@ const Links = () => (
       <li>
         <FontAwesomeIcon icon={faGithub} className="mr-2" />
         <a href="https://github.com/cordx56" target="_blank" rel="noreferrer">
-          @cordx56
-        </a>
+          GitHub
+        </a>{" "}
+        <small>@cordx56</small>
       </li>
       <li>
         <FontAwesomeIcon icon={faKeybase} className="mr-2" />
         <a href="https://keybase.io/cordx56" target="_blank" rel="noreferrer">
-          @cordx56
-        </a>
+          Keybase
+        </a>{" "}
+        <small>@cordx56</small>
       </li>
     </ul>
     <h2 className="h2">Blog</h2>
