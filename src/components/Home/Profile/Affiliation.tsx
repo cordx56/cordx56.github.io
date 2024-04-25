@@ -1,28 +1,48 @@
+import Timeline from "@/components/Timeline";
+
 const Affilitaion = () => (
   <>
     <h2 className="h2">Affiliation</h2>
-    <table>
-      <tbody>
-        <tr>
-          <td>2017 - 2021</td>
-          <td>
-            Shibaura Institute of Technology, Information Science and
-            Engineering
-          </td>
-        </tr>
-        <tr>
-          <td>2021 - 2024</td>
-          <td>
-            Shibaura Institute of Technology, Electrical Engineering and
-            Computer Science
-          </td>
-        </tr>
-        <tr>
-          <td>2024 - Present</td>
-          <td>Shibaura Institute of Technology, Functional Control Systems</td>
-        </tr>
-      </tbody>
-    </table>
+    <Timeline
+      list={[
+        {
+          data: (
+            <>
+              <div>Shibaura Institute of Technology</div>
+              <div className="opacity-60">
+                Information Science and Engineering
+              </div>
+              <div className="opacity-60">Bachelor of Engineering</div>
+            </>
+          ),
+          from: { year: 2017 },
+          to: { year: 2021 },
+        },
+        {
+          data: (
+            <>
+              <div>Shibaura Institute of Technology</div>
+              <div className="opacity-60">
+                Electrical Engineering and Computer Science
+              </div>
+              <div className="opacity-60">Master of Engineering</div>
+            </>
+          ),
+          from: { year: 2021 },
+          to: { year: 2024 },
+        },
+        {
+          data: (
+            <>
+              <div>Shibaura Institute of Technology</div>
+              <div className="opacity-60">Functional Control Systems</div>
+              <div className="opacity-60">Ph.D. student</div>
+            </>
+          ),
+          from: { year: 2024 },
+        },
+      ]}
+    />
   </>
 );
 

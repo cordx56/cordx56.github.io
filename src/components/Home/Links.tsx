@@ -1,16 +1,21 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faKeybase } from "@fortawesome/free-brands-svg-icons";
+
 const Links = () => (
   <section id="links" className="box">
     <h1 className="h1">Links</h1>
     <h2 className="h2">Social</h2>
-    <ul className="ul">
+    <ul className="pl-2 my-2">
       <li>
+        <FontAwesomeIcon icon={faGithub} className="mr-2" />
         <a href="https://github.com/cordx56" target="_blank" rel="noreferrer">
-          GitHub
+          @cordx56
         </a>
       </li>
       <li>
+        <FontAwesomeIcon icon={faKeybase} className="mr-2" />
         <a href="https://keybase.io/cordx56" target="_blank" rel="noreferrer">
-          Keybase
+          @cordx56
         </a>
       </li>
     </ul>

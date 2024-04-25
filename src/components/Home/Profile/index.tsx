@@ -7,7 +7,8 @@ const Profile = () => (
     <h1 className="h1">Profile</h1>
     <p className="p">Master of Engineering</p>
     <p className="p">
-      Programming Language, Natural Language Processing and Web Service
+      Research in Programming Language, Natural Language Processing as a hobby,
+      and Web Service
     </p>
     <Affiliation />
     <Experience />
