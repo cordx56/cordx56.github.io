@@ -1,0 +1,30 @@
+---
+import Base from "@/layouts/Base.astro";
+import ProfileHeader from "@/components/profile/ProfileHeader.astro";
+import Affiliation from "@/components/profile/Affiliation.astro";
+import Experience from "@/components/profile/Experience.astro";
+import Links from "@/components/Links.astro";
+---
+
+<Base title="cordx.cx">
+  <ProfileHeader />
+  <main class="centered">
+    <section id="profile" class="box">
+      <h1 class="h1">Profile</h1>
+      <p class="p">Master of Engineering</p>
+      <p class="p">
+        <ul class="ul">
+          <li>Research in Programming Language</li>
+          <li>Engaged in Natural Language Processing</li>
+          <li>Professional Web Engineer</li>
+        </ul>
+      </p>
+      <Affiliation />
+      <Experience />
+    </section>
+    <section id="links" class="box">
+      <Links />
+    </section>
+  </main>
+  <div class="py-2 text-center">&copy; 2024 cordx56</div>
+</Base>

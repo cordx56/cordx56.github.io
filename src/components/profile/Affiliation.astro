@@ -1,0 +1,23 @@
+---
+import Timeline from "@/components/timeline/Timeline.astro";
+import TimelineElement from "@/components/timeline/TimelineElement.astro";
+---
+
+<h2 class="h2">Affiliation</h2>
+<Timeline>
+  <TimelineElement from={{ year: 2017 }} to={{ year: 2021 }}>
+    <div>Shibaura Institute of Technology</div>
+    <div class="opacity-60">Information Science and Engineering</div>
+    <div class="opacity-60">Bachelor of Engineering</div>
+  </TimelineElement>
+  <TimelineElement from={{ year: 2021 }} to={{ year: 2024 }}>
+    <div>Shibaura Institute of Technology</div>
+    <div class="opacity-60">Electrical Engineering and Computer Science</div>
+    <div class="opacity-60">Master of Engineering</div>
+  </TimelineElement>
+  <TimelineElement from={{ year: 2024 }}>
+    <div>Shibaura Institute of Technology</div>
+    <div class="opacity-60">Functional Control Systems</div>
+    <div class="opacity-60">Ph.D. student</div>
+  </TimelineElement>
+</Timeline>

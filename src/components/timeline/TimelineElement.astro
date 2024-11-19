@@ -1,0 +1,27 @@
+---
+type Date = {
+  year: number;
+  month?: number;
+};
+type Props = {
+  from: Date;
+  to?: Date;
+};
+
+const { from, to } = Astro.props;
+
+const showDate = (date: Date) =>
+  `${date.year}${date.month ? `/${date.month}` : ""}`;
+const showDuration = (from: Date, to?: Date) =>
+  to && from.year === to.year && from.month === to.month
+    ? showDate(from)
+    : `${showDate(from)} - ${to ? showDate(to) : "Present"}`;
+---
+
+<li class="my-3">
+  <div class="pl-4 opacity-60 border-b border-crimson-500">
+    {showDuration(from, to)}
+  </div>
+  <div class="w-2 h-2 -ml-1 -mt-1 rounded-full bg-crimson-500"></div>
+  <div class="pl-4"><slot /></div>
+</li>
