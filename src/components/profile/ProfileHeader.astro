@@ -46,8 +46,6 @@
       if (reset) {
         headerContents.style.top = "0px";
         window.scrollTo(0, initScrollY);
-        // for Safari
-        setTimeout(() => window.scrollTo(0, initScrollY), 10);
       } else if (scrollY < initScrollY) {
         headerContents.style.top = `${(headerHeight - scrollY - headerContentsHeight) / 2}px`;
         headerContents.style.filter = `blur(0px)`;
@@ -60,6 +58,8 @@
     }
   };
   window.addEventListener("DOMContentLoaded", () => updateHeader(true));
+  // for Safari
+  window.addEventListener("load", () => updateHeader(true));
   window.addEventListener("scroll", onScrollOrResize);
   window.addEventListener("resize", onScrollOrResize);
 
