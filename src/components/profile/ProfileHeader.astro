@@ -21,15 +21,30 @@
       </div>
       <div class="w-72 py-2 px-4">
         <h1 class="block mb-2 text-5xl text-center delay-2">@cordx56</h1>
-        <ul class="flex justify-center text-xl">
+        <ul id="email" class="flex flex-col items-center text-xl hidden">
           <li>
-            <a href="mailto:cordx56@cordx.cx">cordx56@cordx.cx</a>
+            work: <a id="work-email"></a>
+          </li>
+          <li>
+            research: <a id="research-email"></a>
           </li>
         </ul>
       </div>
     </div>
   </div>
 </header>
+<script is:inline>
+  const setEmail = (id, address) => {
+    let aElem = document.getElementById(id);
+    aElem.href = "mailto:" + address;
+    aElem.innerHTML = address;
+  };
+
+  document.getElementById("show-email")?.classList.add("hidden");
+  document.getElementById("email")?.classList.remove("hidden");
+  setEmail("work-email", ["cordx56", "@", "cordx.cx"].join(""));
+  setEmail("research-email", ["cordx56", "@", "acm.org"].join(""));
+</script>
 <script>
   const onScrollOrResize = () => {
     updateHeader();
