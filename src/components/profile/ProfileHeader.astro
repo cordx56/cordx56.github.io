@@ -7,12 +7,19 @@
     <div
       class="flex flex-col sm:flex-row justify-center items-center px-4 pt-4 pb-2"
     >
-      <div class="delay-1" style={{ width: "100px", height: "100px" }}>
-        <img
-          class="rounded-full w-full h-full qr-toggle"
-          src="/favicon-large.png"
-          alt="cordx56 icon"
-        />
+      <div class="relative" style={{ width: "100px", height: "100px" }}>
+        <div class="icon-container rounded-full qr-toggle">
+          <img
+            class="w-full h-full absolute top-0 left-0 transition-opacity duration-300"
+            src="/favicon-large.png"
+            alt="cordx56 icon"
+          />
+          <img
+            class="w-full h-full absolute top-0 left-0 opacity-0 hover:opacity-100 transition-opacity duration-300"
+            src="/favicon-mono.png"
+            alt="cordx56 icon mono"
+          />
+        </div>
         <img
           class="w-full h-full qr-toggle hidden"
           src="/qr-cordx-cx.svg"
