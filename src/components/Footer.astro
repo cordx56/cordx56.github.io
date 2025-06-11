@@ -1,0 +1,28 @@
+---
+const banners = [
+    { img: "yude_jp.png", href: "https://www.yude.jp/" },
+    { img: "kusaremkn_com.webp", href: "https://kusaremkn.com/" },
+];
+---
+
+<div class="py-2 text-center">
+    <div class="py-2">&copy; 2024 cordx56</div>
+    <details class="py-2">
+        <summary>other contents</summary>
+        <div class="py-1">そうごりんく</div>
+        <div class="py-1">
+            <a href="/banner.png"
+                ><img class="h-[3rem] mx-auto" src="/banner.png" /></a
+            >
+        </div>
+        <div class="centered flex justify-center flex-wrap">
+            {
+                banners.map((v) => (
+                    <a class="m-1" href={v.href}>
+                        <img class="h-[3rem]" src={`/banners/${v.img}`} />
+                    </a>
+                ))
+            }
+        </div>
+    </details>
+</div>
