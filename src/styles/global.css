@@ -4,13 +4,14 @@
 
 body {
   @apply relative -z-50 bg-zinc-200 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-200;
+  font-size: clamp(0.875rem, 0.8rem + 0.4vw, 1.125rem);
 }
 
 .nav {
   @apply sticky bottom-0 max-w-screen-md mx-auto z-20 bg-gradient-to-t from-zinc-200 via-zinc-200/90 to-zinc-200/0 dark:from-zinc-900 dark:via-zinc-900/90 dark:to-zinc-900/0;
 }
 .nav a {
-  @apply inline-block px-8 py-4 text-xl;
+  @apply inline-block px-8 py-4 nav-text;
 }
 
 .centered {
@@ -43,13 +44,18 @@ td {
 }
 
 .h1 {
-  @apply my-2 text-4xl;
+  @apply my-2;
+  font-size: clamp(2rem, 1.5rem + 2.5vw, 3.5rem);
+  font-weight: 400;
 }
 .h2 {
-  @apply p-2 text-3xl border-b border-crimson-700;
+  @apply p-2 border-b border-crimson-700;
+  font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2.25rem);
+  font-weight: 400;
 }
 .h3 {
-  @apply text-2xl;
+  font-size: clamp(1.25rem, 1.125rem + 0.625vw, 1.75rem);
+  font-weight: 400;
 }
 
 a {
@@ -57,6 +63,19 @@ a {
 }
 p {
   @apply my-2;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 2rem + 2.5vw, 4rem);
+  font-weight: 300;
+}
+
+.nav-text {
+  font-size: clamp(1rem, 0.875rem + 0.625vw, 1.5rem);
+}
+
+.email-text {
+  font-size: clamp(1rem, 0.875rem + 0.625vw, 1.25rem);
 }
 
 .slide-anim {
