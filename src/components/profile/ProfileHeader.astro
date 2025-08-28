@@ -49,8 +49,8 @@
 
   document.getElementById("show-email")?.classList.add("hidden");
   document.getElementById("email")?.classList.remove("hidden");
-  setEmail("work-email", ["cordx56", "@", "cordx.cx"].join(""));
-  setEmail("research-email", ["cordx56", "@", "acm.org"].join(""));
+  setEmail("work-email", ["cordx56", "cordx.cx"].join("@"));
+  setEmail("research-email", ["cordx56", "acm.org"].join("@"));
 </script>
 <script>
   const onScrollOrResize = () => {
